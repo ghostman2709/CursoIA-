@@ -3,142 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curso Hiperfoco Mestre em IA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Mestre em Inteligência Artificial | Hyperfoco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
-      color: #ffffff;
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #00ffe0;
-    }
-    h1 {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #001122, #002244);
+      color: #66ccff;
       text-align: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #66ccff;
+      text-shadow: 0 0 8px #3399ff;
+    }
+
+    p.desc {
+      font-size: 16px;
       margin-bottom: 30px;
+      color: #aaccee;
     }
-    ul {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .resumo-final {
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    .botao-inscricao {
-      display: block;
-      width: fit-content;
-      margin: 40px auto 0;
-      padding: 15px 30px;
-      background-color: #00ffe0;
-      color: #000000;
-      text-decoration: none;
+
+    .btn, .btn-copy {
+      margin: 10px auto;
+      padding: 14px 30px;
+      font-size: 16px;
       font-weight: bold;
+      color: #001122;
+      background-color: #66ccff;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover, .btn-copy:hover {
+      background-color: #3399ff;
+      transform: scale(1.05);
+    }
+
+    .modulo {
+      margin: 30px 0;
+      text-align: left;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border-left: 3px solid #66ccff;
+      border-radius: 12px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .modulo h3 {
+      color: #88ddff;
+      margin-bottom: 10px;
+    }
+
+    .modulo ul {
+      list-style: none;
+      padding: 0;
+      color: #aaccee;
+    }
+
+    .modulo ul li {
+      margin-bottom: 6px;
+    }
+
+    .pix-code {
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
+      padding: 10px;
+      margin: 20px auto;
+      color: #ccf;
+      word-break: break-word;
+      font-size: 14px;
+      max-width: 500px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #88aabb;
     }
   </style>
 </head>
 <body>
+  <h1>🎓 Curso Mestre em Inteligência Artificial</h1>
+  <p class="desc">Domine a IA com foco total e ferramentas práticas que mudarão sua vida.</p>
 
-  <h1>📘 Curso Hiperfoco Mestre em Inteligência Artificial</h1>
+  <button class="btn" id="btnAudio">🎧 Ativar Áudio Binaural</button>
+  <audio id="audioBinaural" src="binaural.mp3" loop preload="auto"></audio>
 
-  <h2>🧠 Fundamentos da Inteligência Artificial</h2>
-  <ul>
-    <li>O que é IA, como ela funciona e por que é o futuro da tecnologia.</li>
-    <li>Diferença entre IA, Machine Learning e Deep Learning.</li>
-    <li>Como a IA está presente no seu dia a dia (YouTube, Netflix, ChatGPT, etc).</li>
-  </ul>
-
-  <h2>🧩 Redes Neurais Simplificadas</h2>
-  <ul>
-    <li>Como uma IA “pensa”.</li>
-    <li>O que são neurônios artificiais e como simulam o cérebro humano.</li>
-    <li>Introdução ao treinamento de modelos de IA.</li>
-  </ul>
-
-  <h2>🛠️ Ferramentas e Plataformas de IA</h2>
-  <ul>
-    <li>OpenAI, ChatGPT, Sora, DALL·E, Copilot e Bard.</li>
-    <li>Como usar IA para automatizar tarefas, criar textos, vídeos e imagens.</li>
-    <li>Plataformas para IA sem precisar saber programar.</li>
-  </ul>
-
-  <h2>🧑‍💻 IA para Produtividade Pessoal</h2>
-  <ul>
-    <li>Como usar IA para escrever, pesquisar, estudar e tomar decisões mais rápidas.</li>
-    <li>IA como assistente pessoal 24h: agendas, resumos, planejamento.</li>
-    <li>Criação de mapas mentais e resumos com IA.</li>
-  </ul>
-
-  <h2>💸 IA para Ganhar Dinheiro</h2>
-  <ul>
-    <li>Criar conteúdos virais com IA para TikTok, Instagram e YouTube.</li>
-    <li>Montar e vender e-books, cursos e consultorias com IA.</li>
-    <li>Gerar renda passiva com automações e ferramentas baseadas em IA.</li>
-  </ul>
-
-  <h2>✍️ IA para Criadores de Conteúdo</h2>
-  <ul>
-    <li>Posts, legendas, roteiros, vídeos e áudios com ferramentas como ChatGPT, D-ID, ElevenLabs e CapCut IA.</li>
-    <li>Criar Reels e Shorts automaticamente com cortes de vídeos.</li>
-  </ul>
-
-  <h2>🤖 IA e Programação (Básico e Intuitivo)</h2>
-  <ul>
-    <li>Como usar IA para programar, mesmo sem saber código.</li>
-    <li>Criar bots, sites e scripts com apoio de IA.</li>
-    <li>Automatizar funções no computador com comandos simples.</li>
-  </ul>
-
-  <h2>🧬 IA e Criatividade</h2>
-  <ul>
-    <li>Brainstorming com IA: ideias instantâneas para qualquer projeto.</li>
-    <li>Criação de nomes, marcas, logotipos e produtos com IA.</li>
-    <li>Escrita criativa, livros e storytelling usando IA.</li>
-  </ul>
-
-  <h2>🛒 IA para Negócios Digitais</h2>
-  <ul>
-    <li>Criar landing pages e funis de vendas com IA.</li>
-    <li>Automatizar atendimento ao cliente (Chatbots).</li>
-    <li>IA no marketing: segmentação, campanhas e anúncios otimizados.</li>
-  </ul>
-
-  <h2>📈 IA e Análise de Dados</h2>
-  <ul>
-    <li>Interpretar gráficos e tendências com IA.</li>
-    <li>Análise de redes sociais e comportamento de público com insights prontos.</li>
-    <li>Relatórios prontos com IA para empresas e freelancers.</li>
-  </ul>
-
-  <h2>🧰 Módulos Extras</h2>
-  <ul>
-    <li>Criar vídeos com pessoas reais (Avatares IA como VEED, Synthesia).</li>
-    <li>Criar Instagram de cortes automáticos.</li>
-    <li>Criar podcasts com vozes 100% IA.</li>
-    <li>Simular vozes famosas, criar clipes e audiobooks.</li>
-  </ul>
-
-  <div class="resumo-final">
-    <h3>Resumo Final:</h3>
-    <p>
-      Você vai sair do curso sabendo usar a IA de forma prática, criativa e estratégica, mesmo sem saber programar.
-      Vai dominar as ferramentas que os maiores do mercado usam e aplicar no seu dia a dia para produzir mais, ganhar mais e pensar como um mestre do futuro.
-    </p>
+  <div class="modulo">
+    <h3>Módulo 1 – Introdução à Inteligência Artificial</h3>
+    <ul>
+      <li>O que é IA e o que ela vai mudar</li>
+      <li>IA fraca vs IA forte</li>
+      <li>Futuro, ética e impactos sociais</li>
+    </ul>
   </div>
 
-  <a href="https://ghostman2709.github.io/Hiperfoco/" class="botao-inscricao">💳 Fazer Inscrição no Curso</a>
+  <div class="modulo">
+    <h3>Módulo 2 – ChatGPT e Modelos de Linguagem</h3>
+    <ul>
+      <li>Como funcionam os LLMs</li>
+      <li>Prompt engineering</li>
+      <li>ChatGPT para produtividade</li>
+    </ul>
+  </div>
 
+  <div class="modulo">
+    <h3>Módulo 3 – Ferramentas Práticas com IA</h3>
+    <ul>
+      <li>Sites, apps e IA no celular</li>
+      <li>Automatize sua vida digital</li>
+    </ul>
+  </div>
+
+  <div class="modulo">
+    <h3>Módulo 4 – IA para Programação e Automação</h3>
+    <ul>
+      <li>Códigos com IA</li>
+      <li>Bots e scripts práticos</li>
+    </ul>
+  </div>
+
+  <div class="modulo">
+    <h3>Módulo 5 – Monetização com IA</h3>
+    <ul>
+      <li>Criação de produtos digitais</li>
+      <li>Marketing automatizado</li>
+    </ul>
+  </div>
+
+  <div class="modulo">
+    <h3>Módulo 6 a 10</h3>
+    <ul>
+      <li>Produtividade com IA</li>
+      <li>IA e Inteligência Emocional</li>
+      <li>Criação com IA: imagem, vídeo, música</li>
+      <li>Modo Mestre Hyper Foco</li>
+    </ul>
+  </div>
+  
+  <div class="modulo">
+    <h3>Módulo 11 – Criação de Vídeos com Pessoas Reais + Instagram de Cortes</h3>
+    <ul>
+      <li>Ferramentas como HeyGen, Synthesia, Sora</li>
+      <li>Criação de personagens realistas com IA</li>
+      <li>Roteirização para vídeos virais de cortes</li>
+      <li>Como montar um perfil de autoridade no Instagram com IA</li>
+    </ul>
+  </div>
+
+  <p class="desc">Realize o pagamento via Pix Copia e Cola:</p>
+
+  <img src="qrcode-pix-erico.png" alt="QR Code Pix" style="max-width:200px; margin: 10px auto; display:block;" />
+  <div class="pix-code" id="pixCode">
+00020126580014BR.GOV.BCB.PIX013692a349bf-d612-46fd-ab30-6532a7397b0a5204000053039865406297.005802BR5924Erico Mendieta Rodriguez6009SAO PAULO62140510ZtHfjL2epp63042748
+  </div>
+
+  <button class="btn-copy" onclick="copiarPix()">📋 Copiar Código Pix</button>
+
+  <p class="desc">Após o pagamento, envie o comprovante clicando abaixo:</p>
+  <a class="btn" id="btnWhatsapp" href="https://wa.me/5555996043937?text=Olá,%20já%20paguei%20o%20Curso%20Mestre%20em%20IA%20e%20segue%20o%20comprovante." target="_blank" style="display:none;">📤 Enviar Comprovante no WhatsApp</a>
+
+  <footer>
+    © 2025 Projeto Hyperfoco – Criado por Érico Mendieta
+  </footer>
+
+  <script>
+    const btnAudio = document.getElementById('btnAudio');
+    const audio = document.getElementById('audioBinaural');
+    let isPlaying = false;
+
+    audio.volume = 1.0;
+
+    btnAudio.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play().then(() => {
+          btnAudio.textContent = '⏸️ Parar Áudio Binaural';
+          isPlaying = true;
+        }).catch(err => {
+          console.error("Erro ao reproduzir o áudio:", err);
+          alert("Erro ao reproduzir áudio. Verifique se o arquivo 'binaural.mp3' está na mesma pasta.");
+        });
+      } else {
+        audio.pause();
+        btnAudio.textContent = '🎧 Ativar Áudio Binaural';
+        isPlaying = false;
+      }
+    });
+
+    function copiarPix() {
+      const pixCode = document.getElementById('pixCode').textContent.trim();
+      navigator.clipboard.writeText(pixCode).then(() => {
+        alert('Código Pix copiado com sucesso!');
+        document.getElementById("btnWhatsapp").style.display = "inline-block";
+      }).catch(err => {
+        alert('Erro ao copiar código Pix.');
+      });
+    }
+  </script>
 </body>
 </html>
