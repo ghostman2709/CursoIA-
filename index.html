@@ -86,6 +86,27 @@
       max-width: 500px;
     }
 
+    #msgPix {
+      display: none;
+      font-size: 14px;
+      margin-top: 20px;
+      color: #aaffaa;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #btnWhatsapp {
+      display: none;
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #btnWhatsapp.show {
+      display: inline-block;
+      opacity: 1;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.85rem;
@@ -100,6 +121,7 @@
   <button class="btn" id="btnAudio">🎧 Ativar Áudio Binaural</button>
   <audio id="audioBinaural" src="binaural.mp3" loop preload="auto"></audio>
 
+  <!-- Módulos -->
   <div class="modulo">
     <h3>Módulo 1 – Introdução à Inteligência Artificial</h3>
     <ul>
@@ -158,10 +180,21 @@
       <li>Ferramentas como HeyGen, Synthesia, Sora</li>
       <li>Criação de personagens realistas com IA</li>
       <li>Roteirização para vídeos virais de cortes</li>
-      <li>Como montar um perfil de autoridade no Instagram com IA</li>
+      <li>Como montar um perfil de autoridade com IA</li>
     </ul>
   </div>
 
+  <div class="modulo">
+    <h3>Conteúdo Extra – Dominando Gemini + Veo3 (Google AI)</h3>
+    <ul>
+      <li>Como usar Gemini Pro e Ultra</li>
+      <li>Integrações multimodais com Android, Documentos, Gmail</li>
+      <li>Criação de vídeos com Veo3</li>
+      <li>Ferramentas secretas do Google Labs</li>
+    </ul>
+  </div>
+
+  <!-- Pagamento -->
   <p class="desc">Realize o pagamento via Pix Copia e Cola:</p>
 
   <img src="qrcode-pix-erico.png" alt="QR Code Pix" style="max-width:200px; margin: 10px auto; display:block;" />
@@ -171,8 +204,8 @@
 
   <button class="btn-copy" onclick="copiarPix()">📋 Copiar Código Pix</button>
 
-  <p class="desc">Após o pagamento, envie o comprovante clicando abaixo:</p>
-  <a class="btn" id="btnWhatsapp" href="https://wa.me/5555996043937?text=Olá,%20já%20paguei%20o%20Curso%20Mestre%20em%20IA%20e%20segue%20o%20comprovante." target="_blank" style="display:none;">📤 Enviar Comprovante no WhatsApp</a>
+  <p id="msgPix">✅ Pix copiado! Envie seu comprovante no WhatsApp:</p>
+  <a class="btn" id="btnWhatsapp" href="https://wa.me/5555996043937?text=Olá,%20já%20paguei%20o%20Curso%20Mestre%20em%20IA%20e%20segue%20o%20comprovante." target="_blank">📤 Enviar Comprovante</a>
 
   <footer>
     © 2025 Projeto Hyperfoco – Criado por Érico Mendieta
@@ -204,10 +237,13 @@
     function copiarPix() {
       const pixCode = document.getElementById('pixCode').textContent.trim();
       navigator.clipboard.writeText(pixCode).then(() => {
-        alert('Código Pix copiado com sucesso!');
-        document.getElementById("btnWhatsapp").style.display = "inline-block";
+        const msgPix = document.getElementById("msgPix");
+        const btnZap = document.getElementById("btnWhatsapp");
+        msgPix.style.display = "block";
+        setTimeout(() => msgPix.style.opacity = 1, 50);
+        btnZap.classList.add("show");
       }).catch(err => {
-        alert('Erro ao copiar código Pix.');
+        console.error("Erro ao copiar Pix:", err);
       });
     }
   </script>
