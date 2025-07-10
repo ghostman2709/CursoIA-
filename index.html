@@ -14,6 +14,7 @@
       text-align: center;
       min-height: 100vh;
       padding: 40px 20px;
+      scroll-behavior: smooth;
     }
 
     h1 {
@@ -173,7 +174,7 @@
       <li>Modo Mestre Hyper Foco</li>
     </ul>
   </div>
-  
+
   <div class="modulo">
     <h3>Módulo 11 – Criação de Vídeos com Pessoas Reais + Instagram de Cortes</h3>
     <ul>
@@ -194,9 +195,20 @@
     </ul>
   </div>
 
+  <!-- Módulo Novo -->
+  <div class="modulo">
+    <h3>🚀 API + ChatBot Profissional para WhatsApp</h3>
+    <ul>
+      <li>Venda no Automático com Respostas Inteligentes</li>
+      <li>Automatize atendimentos, cobranças e confirmações com Pix</li>
+      <li>Link de pagamento gerado na hora com liberação automática</li>
+      <li>Dashboard completo com controle de clientes, pedidos e pagamentos</li>
+    </ul>
+    <img src="A_promotional_digital_graphic_design_advertisement.png" alt="API WhatsApp Chatbot" style="max-width:100%; border-radius: 12px; margin-top: 10px;" />
+  </div>
+
   <!-- Pagamento -->
   <p class="desc">Realize o pagamento via Pix Copia e Cola:</p>
-
   <img src="qrcode-pix-erico.png" alt="QR Code Pix" style="max-width:200px; margin: 10px auto; display:block;" />
   <div class="pix-code" id="pixCode">
 00020126580014BR.GOV.BCB.PIX013692a349bf-d612-46fd-ab30-6532a7397b0a5204000053039865406297.005802BR5924Erico Mendieta Rodriguez6009SAO PAULO62140510ZtHfjL2epp63042748
@@ -240,8 +252,11 @@
         const msgPix = document.getElementById("msgPix");
         const btnZap = document.getElementById("btnWhatsapp");
         msgPix.style.display = "block";
-        setTimeout(() => msgPix.style.opacity = 1, 50);
-        btnZap.classList.add("show");
+        setTimeout(() => {
+          msgPix.style.opacity = 1;
+          btnZap.classList.add("show");
+          document.getElementById("msgPix").scrollIntoView({ behavior: "smooth" });
+        }, 100);
       }).catch(err => {
         console.error("Erro ao copiar Pix:", err);
       });
